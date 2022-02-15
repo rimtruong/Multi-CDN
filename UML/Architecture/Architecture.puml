@@ -1,0 +1,15 @@
+@startmindmap
+'https://plantuml.com/mindmap-diagram
+
+caption Multi-CDN Architecture
+
+* Multi-CDN
+
+** Portal
+*** Admin
+*** Customer
+
+** DNS
+
+center footer My super footer
+@endmindmap

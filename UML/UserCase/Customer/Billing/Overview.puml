@@ -1,0 +1,14 @@
+	@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor customer
+rectangle Billing-Overview {
+  customer -- (update\naccount detail)
+  customer -- (recharge\nyour account)
+  (recharge\nyour account) .> (make a payment) : <<include>>
+  (show error) .> (recharge\nyour account) : <<extend>>
+
+  customer -- (enter promo code)
+  customer -- (enable/disable auto-recharge)
+}
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor customer
+actor system
+rectangle Billing-EarnCredits {
+  customer -- (share your URL)
+  (share your URL) .> (refer a friend) : <<include>>
+  (refer a friend) .> (give money to customer) : <<include>>
+  (show error) .> (refer a friend) : <<extend>>
+
+  (give money to customer) -- system
+}
+@enduml

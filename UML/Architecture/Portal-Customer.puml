@@ -1,0 +1,101 @@
+@startmindmap
+'https://plantuml.com/mindmap-diagram
+
+caption Multi-CDN Architecture Portal Customer
+
+* Customer
+** Account
+*** Account Settings
+*** Manage Users
+*** Abuse Cases
+*** Data Processing (GDPR)
+
+** Billing
+*** Overview
+*** Earn Credits
+*** History
+
+** Support
+*** Support Tickets
+*** New Support Ticket
+*** Knowledge Base
+
+** Overview
+
+** Pull Zones
+*** Manage Pull Zones
+**** General
+***** General
+***** Pricing & Routing
+***** SafeHop Configuration
+
+**** Caching
+***** General
+***** Perma-Cache
+***** Origin Shield
+
+**** Security
+***** General
+***** Logging
+***** SSL
+***** 502/504 Error Pages
+***** S3 Authentication
+***** Token Authentication
+
+**** Traffic Manager
+
+**** Headers
+
+**** Optimizer
+***** Settings
+***** Image Classes
+***** Statistics
+
+
+
+**** Edge Rules
+**** Network Limits
+**** Delete Zone
+
+*** Add Pull Zone
+
+** Storage Zones
+*** Manage Storage Zones
+**** File Manager
+**** FTP & API Access
+**** Error Handling
+**** Replication
+**** Connected Pull Zones
+**** Delete Zone
+
+*** Add Storage Zone
+
+** Stream
+*** Manage Libraries
+**** Manage Videos
+***** Videos
+***** Collections
+
+**** Player
+**** Advertising
+**** Encoding
+**** Pricing
+**** Security
+**** Storage
+**** Statistics
+**** API
+**** Delete Library
+
+*** Add Video Library
+
+** Statistics
+
+** Purge
+
+** Logs
+
+** Monitoring
+
+center footer tutqq@viettelidc.com.vn
+
+@endmindmap

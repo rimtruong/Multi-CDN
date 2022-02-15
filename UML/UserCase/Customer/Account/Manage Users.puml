@@ -1,0 +1,10 @@
+	@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor customer
+rectangle Account-ManageUsers {
+  customer -- (add users to team)
+  (add user) .> (edit user detail) : <<include>>
+  (add user) .> (remove user) : <<include>>
+}
+@enduml
