@@ -34,11 +34,21 @@ mindmapDiagram {
 ****** Origin bytes
 ****** Hit rate
 ****** Geo data
-**** DNS
+****[#Orange] DNS
 *****[#Orange] DNS routing
 ******[#Orange] DNS load balancing
+******* Round Robin
+******* Weighted Round Robin
+******* Least Connections
+******* Weighted Least Connections
+******* Random
+
 ******[#Orange] Geographic Coverage
+******* GeoIP2 databases
+******* Topology(direct clients to end-points in the same region/datacenter).
+
 ******[#Orange] Health check
+******* Failover group(active-backup).
 
 *****[#Orange] DNS security
 ****** DNSSEC with Online Signing
@@ -48,6 +58,8 @@ mindmapDiagram {
 ****** Redundant and secondary DNS
 ****** Secure Zone Transfer with TSIG
 
+****** Health check
+******* Failover group(active-backup).
 
 **** Caching
 ***** Dynamic Caching
