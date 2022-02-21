@@ -35,23 +35,18 @@ mindmapDiagram {
 ****** Hit rate
 ****** Geo data
 **** DNS
-***** DNS routing
-****** DNS load balancing
-******* Round Robin
-******* Weighted Round Robin
-******* Least Connections
-******* Weighted Least Connections
-******* Random
+*****[#Orange] DNS routing
+******[#Orange] DNS load balancing
+******[#Orange] Geographic Coverage
+******[#Orange] Health check
 
-****** Geographic Coverage
-******* GeoIP2 databases
-******* Topology(direct clients to end-points in the same region/datacenter).
-
-****** Health check
-******* Failover group(active-backup).
-
-***** Redundant and secondary DNS
-***** DNS security
+*****[#Orange] DNS security
+****** DNSSEC with Online Signing
+****** Anycast for High Availability
+****** DDoS Protection for the DNS Layer
+****** 2-Factor Authentication for DNS Administration
+****** Redundant and secondary DNS
+****** Secure Zone Transfer with TSIG
 
 
 **** Caching
@@ -61,7 +56,7 @@ mindmapDiagram {
 
 **** Service discovery
 **** Disaster recovery and high availability
-**** Limit Redirects
+****[#Orange] Limit Redirects
 
 *** Account
 **** Account Settings
@@ -75,14 +70,17 @@ mindmapDiagram {
 **** Manage Payment Method
 **** History
 
+*** Dashboard
+*** Report
+*** Logs
+*** Monitoring
+*** Statitics
+
 *** Support
 **** Support Tickets
 **** New Support Ticket
 **** Knowledge Base
 **** 24/7/365 Support
-
-
-*** Overview
 
 *** Pull Zones
 **** Manage Pull Zones
@@ -152,16 +150,14 @@ mindmapDiagram {
 
 **** Add Video Library
 
-*** Statistics
-
 *** Purge
 **** Purge URLs
 **** Purge Pull Zone
 
-*** Logs
-**** Reports
-
-*** Monitoring
+** API
+*** API
+*** Document
+*** Sandbox
 
 -- DNS
 --- powerDNS admin
