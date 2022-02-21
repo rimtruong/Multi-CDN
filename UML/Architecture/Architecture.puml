@@ -5,11 +5,219 @@ caption Multi-CDN Architecture
 
 * Multi-CDN
 
+<style>
+mindmapDiagram {
+  node {
+    BackgroundColor lightGreen
+  }
+  boxless {
+    FontColor darkgreen
+  }
+}
+</style>
 ** Portal
-*** Admin
-*** Customer
+'* Customer
+*** CDN Providers
+**** Manage CDN Providers
+***** Add CDN Providers
+****** Introduction
+****** Install
+******* Config
+****** Rate
 
-** DNS
+***** Benchmark performance
+****** A/B testing
+****** Edge availability
+
+***** Performance Analytics
+****** Total bytes
+****** Origin bytes
+****** Hit rate
+****** Geo data
+**** DNS
+***** DNS routing
+****** DNS load balancing
+******* Round Robin
+******* Weighted Round Robin
+******* Least Connections
+******* Weighted Least Connections
+******* Random
+
+****** Geographic Coverage
+******* GeoIP2 databases
+******* Topology(direct clients to end-points in the same region/datacenter).
+
+****** Health check
+******* Failover group(active-backup).
+
+***** Redundant and secondary DNS
+***** DNS security
+
+
+**** Caching
+***** Dynamic Caching
+***** Static Caching
+
+
+**** Service discovery
+**** Disaster recovery and high availability
+**** Limit Redirects
+
+*** Account
+**** Account Settings
+**** Manage Users
+**** Abuse Cases
+**** Data Processing (GDPR)
+
+*** Billing
+**** Overview
+**** Earn Credits
+**** Manage Payment Method
+**** History
+
+*** Support
+**** Support Tickets
+**** New Support Ticket
+**** Knowledge Base
+**** 24/7/365 Support
+
+
+*** Overview
+
+*** Pull Zones
+**** Manage Pull Zones
+***** General
+****** General
+****** Pricing & Routing
+****** SafeHop Configuration
+
+***** Caching
+****** General
+****** Perma-Cache
+****** Origin Shield
+
+***** Security
+****** General
+****** Logging
+****** SSL
+****** 502/504 Error Pages
+****** S3 Authentication
+****** Token Authentication
+
+***** Traffic Manager
+
+***** Headers
+
+***** Optimizer
+****** Settings
+****** Image Classes
+****** Statistics
+****** Front End Optimization
+****** Javascript performance tuning
+****** HTML complexity
+****** Device Detection
+
+***** Edge Rules
+***** Network Limits
+***** Delete Zone
+
+**** Add Pull Zone
+
+*** Storage Zones
+**** Manage Storage Zones
+***** File Manager
+***** FTP & API Access
+***** Error Handling
+***** Replication
+***** Connected Pull Zones
+***** Delete Zone
+
+**** Add Storage Zone
+
+*** Stream
+**** Manage Libraries
+***** Manage Videos
+****** Videos
+****** Collections
+
+***** Player
+***** Advertising
+***** Encoding
+***** Pricing
+***** Security
+***** Storage
+***** Statistics
+***** API
+***** Delete Library
+
+**** Add Video Library
+
+*** Statistics
+
+*** Purge
+**** Purge URLs
+**** Purge Pull Zone
+
+*** Logs
+**** Reports
+
+*** Monitoring
+
+-- DNS
+--- powerDNS admin
+---- Multiple domain management
+---- Domain template
+---- User management
+---- User access management based on domain
+---- User activity logging
+---- Support Local DB / SAML / LDAP / Active Directory user authentication
+---- Support Google / Github / Azure / OpenID OAuth
+---- Support Two-factor authentication (TOTP)
+---- Dashboard and pdns service statistics
+---- DynDNS 2 protocol support
+---- Edit IPv6 PTRs using IPv6 addresses directly (no more editing of literal addresses!)
+---- Limited API for manipulating zones and records
+---- Full IDN/Punycode support
+
+--- Common
+---- IPv4, UDP/TCP
+---- IPv6, UDP/TCP, 100% compliant
+---- Remotely pollable statistics for real time graphing
+---- High performance
+---- SNMP statistics bridge (read only)
+
+--- Authoritative Server
+---- MySQL, PostgreSQL, Oracle, Sybase, Microsoft SQL Server, LDAP, SQLite3
+----- Including replication
+----- Near instant startup time
+---- Plain BIND zone files
+----- Brief startup time
+
+---- Migration tools from legacy DNS platforms (zone2sql)
+---- Internal Lua-based scripted answer generation
+---- External high-performance Script-based answer generation
+---- Geographical load balancing
+---- Full DNSSEC support including all standardized algorithms
+---- TSIG for transaction signatures, AXFR authorization/requests
+---- Master/Slave support
+---- Built-in web server for statistics and limited direct control
+---- API for direct control (pdns_control, pdnssec)
+----- Local and remote access
+
+--- Recursor
+---- Full support for all relevant standards
+---- Advanced anti-spoofing measures
+---- Reconfiguration without downtime
+---- Plain BIND zone files for “resolved hosting”
+---- Internal Lua-based scripted answer generation
+---- Question interception, answer reconditioning, NXDOMAIN redirection
+----- Including ‘block lists’ and security measures
+---- API for direct control (rec_control)
+----- Local and remote access
+
+
+
+
 
 center footer My super footer
 @endmindmap
