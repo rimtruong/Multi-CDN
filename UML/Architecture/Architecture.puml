@@ -41,11 +41,19 @@ mindmapDiagram {
 ******* Weighted Round Robin
 ******* Least Connections
 ******* Weighted Least Connections
-******* Random
+******* Hash
+******* First alive
 
 ******[#Orange] Geographic Coverage
-******* GeoIP2 databases
+******* Geolocation provider
+******** MaxMind
+******** Neustar
+
 ******* Topology(direct clients to end-points in the same region/datacenter).
+******* Geo blocking
+******* Geo limit
+******** Countries
+******** Redirect URL
 
 ******[#Orange] Health check
 ******* Failover group(active-backup).
@@ -60,6 +68,13 @@ mindmapDiagram {
 
 ****** Health check
 ******* Failover group(active-backup).
+******* Health Tracker
+******** SPF
+******** Domain Blacklist
+******** DNS
+******** DMARC
+******** MX
+******** MX Blacklist
 
 **** Caching
 ***** Dynamic Caching
