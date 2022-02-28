@@ -183,6 +183,88 @@ mindmapDiagram {
 
 ** API
 *** API
+**** Authentication
+***** configured with the api-key option, which has to be sent in the X-API-Key header.
+
+**** Servers
+***** Endpoints
+****** List all servers
+****** List a server
+
+***** Objects
+****** Server
+
+**** Zones
+***** Endpoints
+****** List all Zones in a server
+****** Creates a new domain, returns the Zone on creation.
+****** zone managed by a server
+****** Deletes this zone, all attached metadata and rrsets.
+****** Creates/modifies/deletes RRsets present in the payload and their comments. Returns 204 No Content on success.
+****** Modifies basic zone data.
+****** Retrieve slave zone from its master.
+****** Send a DNS NOTIFY to all slaves.
+****** Returns the zone in AXFR format.
+****** Rectify the zone data.
+
+***** Objects
+****** Zone
+****** RRSet
+****** Record
+****** Comment
+
+**** Cryptokeys
+***** Endpoints
+****** Get all CryptoKeys for a zone, except the privatekey
+****** Creates a Cryptokey
+****** Returns all data about the CryptoKey, including the privatekey.
+
+
+
+
+
+
+***** Objects
+
+**** Metadata
+***** Endpoints
+***** Objects
+
+**** TSIGKeys
+**** Autoprimaries
+**** Searching
+**** Statistics
+**** Cache
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+***** Cryptokeys
+***** Metadata
+***** TSIGKeys
+***** Autoprimaries
+***** Searching
+***** Statistics
+***** Cache
+
 *** Document
 *** Sandbox
 
@@ -237,10 +319,6 @@ mindmapDiagram {
 ----- Including ‘block lists’ and security measures
 ---- API for direct control (rec_control)
 ----- Local and remote access
-
-
-
-
 
 center footer My super footer
 @endmindmap

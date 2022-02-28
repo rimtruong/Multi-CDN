@@ -1,8 +1,0 @@
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor customer
-rectangle Billing-History {
-  customer -- (see account\nbalance history)
-}
-@enduml
